@@ -1,32 +1,17 @@
 using API.Seed.SwaggerConfig;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace API.Seed
 {
-    /// <summary>
-    /// Steps to version an API.
-    /// One way to version a REST API is to include the version number in the URI path.
-    /// Versioning is a crucial part of API design. 
-    /// It gives developers the ability to improve their API without breaking the client’s applications when new updates are rolled out.
-    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
